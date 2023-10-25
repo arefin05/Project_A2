@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CARE Bangladesh | Defending Dignity. Fighting Poverty.</title>
+
+    <!-- favicon  -->
+    <link href="../assets/images/fav_care.ico" rel="icon"/>
+    
+    <!-- personal_info -->
+    <meta name="description"
+    content="Web-page of CARE Bangladesh, CARE, ngo, care bangladesh, ngo in bangladesh, poor people, proverty, help, help poor people, defending dignity, fighting poverty, Bangladesh, about CARE, women empowerment by Sheikh Pear Arefin-web-Designer">
+    <meta name="keywords" content="Class-Work-CARE Bangladesh">
+    <meta name="author" content="Zannaty Musammat Rahela and Shekh Pear Arefin ">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+    <link rel="shortcut icon" href="images/care.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="https://www.carebangladesh.org/js/bootstrap.min.js" rel="stylesheet">
+    <link href="https://www.carebangladesh.org/js/owl.carousel.js" rel="stylesheet">
+
+    
+
+    <link href="https://www.carebangladesh.org/css/imStyle.css?v=1697888747" rel="stylesheet">
+    <link href="https://www.carebangladesh.org/css/custom.css?v=1697888747" rel="stylesheet">
+    <style type="text/css">
+        #module .real-background {
+            position: absolute;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+        #module #response {
+            width: 700px;
+            height: auto;
+            background-color: #ffffff;
+        }
+        #fake-background {
+            z-index: 9000;
+            background-color: #000;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .close {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            z-index: 999;
+            background: #FFF;
+            border-radius: 50%;
+            padding: 7px 10px;
+            font-weight: bold;
+            border: 1px solid #DDD;
+            opacity: 1;
+        }
+        @media only screen and (max-width: 600px) {
+            #module #response {
+                width: 80%;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <script type="text/javascript">
+        (window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"><\/script>'));
+        $(function () {
+            //Set height and width to fill the mask layer under the pop-up
+            $('#fake-background').css({
+                'width': $(window).width(),
+                'height': $(document).height()
+            });
+            //transition effect
+            $('#fake-background').fadeIn(1000).fadeTo("slow", 0.9);
+
+            //Set the pop-up window to center
+            $("#response").css('top', '10%').css('left', $(window).width() / 2 - $("#response").width() / 2).fadeIn(2000);
+            //while tapping the close link
+            $('.real-background .close').click(function (e) {
+                //Cancel the link behaviour
+                e.preventDefault();
+                $('#fake-background').hide();
+                $('.real-background').hide();
+            });
+            //This will execute if user clicks outside pop-up
+            $('#fake-background').click(function () {
+                $(this).hide();
+                $('.real-background').hide();
+            });
+        });
+    </script>
+    <div id="module">
+        <div style="top: 200px; left: 550px; display: none;" id="response" class="real-background">
+            <a href="#" class="close">X</a>
+            <div>
+                <img src="../assets/images/125956051_3540519402676716_4604984791131986238_n.jpg" width='100%'/>
+            </div>
+        </div>
+        <div style="width: 1500px; height: 599px; display: none; opacity: 0.7;" id="fake-background"></div>
+    </div>
+</head>
+<body>
+    <header id="header" role="banner">
+        <!-- Fixed navbar -->
+        <div class="navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="mobile-contact-menu"><a href="contact-us.php">Contact us</a></div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <hgroup id="site-name-slogan">
+                        <div id="site-name"><a href="index.php" title="Home"><img src="images/care_logo-scroll.svg"
+                                    class="img-responsive"></a></div>
+                        <div id="site-name-mobile"><a href="index.php" title="Home"><img
+                                    src="images/care_logo-scroll.svg" class="img-responsive"></a></div>
+                        <div class="navbar-collapse collapse">
+                            <div class="tag"><img src="images/care_tag.svg" class="img-responsive"></div>
+                            <div class="search_social">
+                                <fieldset>
+                                    <ul class="toolbar">
+                                        <li class="search_social-contact"><a href="contact-us.php">Contact us</a></li>
+                                        <li><a href="https://www.linkedin.com/company/care-bangladesh"
+                                                target="_blank"><img src="images/icon_linkedin.png"></a></li>
+                                        <li><a href="https://www.instagram.com/carebangladeshofficial/"
+                                                target="_blank"><img src="images/icon_instagram.png"></a></li>
+                                        <li><a href="https://www.youtube.com/user/CAREBangladesh1" target="_blank"><img
+                                                    src="images/icon_youtube.svg"></a></li>
+                                        <li><a href="https://twitter.com/CAREBdesh" target="_blank"><img
+                                                    src="images/icon_twitter.svg"></a></li>
+                                        <li><a href="https://www.facebook.com/CareBangladeshOfficialPage"
+                                                target="_blank"><img src="images/icon_facebook.svg"></a></li>
+                                        <li><img id="btn-search" src="images/icon_search.svg"
+                                                style="border-left: 1px solid #fff; cursor:pointer;"></li>
+                                        <li>
+                                            <form method="get" action="https://www.google.com/search"
+                                                name="vSearch_basicSearchForm_form_1"
+                                                id="vSearch-basicSearchForm-form-1" novalidate="novalidate"
+                                                target="_blank">
+                                                <input type="hidden" value="search.results" name="fuseaction">
+                                                <input type="hidden" name="sitesearch" value="carebangladesh.org" />
+                                                <input type="search" id="search" name="q" placeholder="s e a r c h">
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                            </div>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" id="about_care" data-toggle="dropdown">Who we
+                                        are</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="smooth_scroll" href="about_care.php#sc_1">About CARE</a></li>
+                                        <!--<li><a class="smooth_scroll" href="about_care.php#sc_1">Message From CD</a></li> -->
+                                        <li><a class="smooth_scroll" href="about_care.php#sc_2">Vision, Mission, Focus,
+                                                Values</a></li>
+                                        <li><a class="smooth_scroll" href="about_care.php#sc_3">Why we focus on women
+                                                and girls</a></li>
+                                        <li><a class="smooth_scroll" href="about_care.php#sc_4">Country Directors
+                                                Bio</a></li>
+                                        <li><a class="smooth_scroll" href="about_care.php#sc_8">Our Partners and
+                                                Donors</a></li>
+                                        <!--<li><a class="smooth_scroll" href="about_care.php#sc_9">Our Team</a></li> -->
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" id="our_work"
+                                        data-toggle="dropdown">What we do</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="smooth_scroll" href="our_work.php#sc_5">Our approach</a></li>
+                                        <!--<li><a class="smooth_scroll" href="our_work.php#sc_1">Our working approach</a></li>-->
+                                        <li><a class="smooth_scroll" href="our_work.php#sc_4">We work for</a></li>
+                                        <li><a class="smooth_scroll" href="our_work.php#sc_6">Key Focus Area</a></li>
+                                        <li><a class="smooth_scroll" href="our_work.php#sc_2">Current Projects</a></li>
+                                        <li><a href="care_archive_project.php">Project Archive</a></li>
+                                        <li><a class="smooth_scroll" href="our_work.php#sc_3">Timeline</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" id="our_impact"
+                                        data-toggle="dropdown">Impact</a>
+                                    <ul class="dropdown-menu" style="right:0;">
+                                        <!-- <li><a class="smooth_scroll" href="our_impact.php#sc_1">Pearl Impact posters</a></li> -->
+                                        <li><a class="smooth_scroll" href="our_impact.php#sc_1">Our Impact</a></li>
+                                        <!--<li><a class="smooth_scroll" href="our_impact.php#sc_2">Publications</a></li>-->
+                                        <li><a class="smooth_scroll" href="our_impact.php#empowerment">Our Theory of
+                                                change</a></li>
+                                        <!-- <li><a href="publications_archive.php">Publications Archive</a></li> -->
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" id="media_center"
+                                        data-toggle="dropdown">Media Center</a>
+                                    <ul class="dropdown-menu">
+                                        <!--<li><a class="smooth_scroll" href="media_center.php#sc_4">Social Media</a></li> -->
+                                        <li><a href="media-center-view-all.php?type=Press">Press Releases</a></li>
+                                        <li><a href="media-center-view-all.php?type=NewsRoom">Media Coverage</a></li>
+                                        <li><a href="publications.php">Publications</a></li>
+                                        <li><a href="media-center-view-all.php?type=MediaUpdates">Updates</a></li>
+                                        <li><a href="media-center-view-all.php?type=Story">Our Stories & Blog</a></li>
+                                        <li><a href="care_gallery.php">Gallery</a></li>
+                                     
+                                    </ul>
+                                </li>
+                                <li lass="dropdown"><a href="#" class="dropdown-toggle" id="refugeecrisis"
+                                        data-toggle="dropdown">Refugee Crisis</a>
+                                    
+                                    <ul class="dropdown-menu">
+                                        <li><a class="smooth_scroll" href="refugee.php?type=media_updates">Updates</a>
+                                        </li>
+                                        
+                                        <li><a class="smooth_scroll" href="refugee.php?type=press_release">Press &
+                                                Media</a></li>
+                                        <li><a class="smooth_scroll" href="refugee.php?type=field_story">Stories &
+                                                Blog</a></li>
+                                        <li><a class="smooth_scroll" href="refugee-media.php?type=photo">Photos</a></li>
+                                        <li><a class="smooth_scroll" href="refugee-media.php?type=video">Videos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" id="COVID19crisisresponse"
+                                        data-toggle="dropdown">COVID-19</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="smooth_scroll" href="covid19.php?type=media_updates">Updates</a>
+                                        </li>
+                                        <li><a class="smooth_scroll" href="covid19.php?type=press_release">Press &
+                                                Media</a></li>
+                                        <li><a class="smooth_scroll" href="covid19.php?type=field_story">Stories and
+                                                Resources</a></li>
+                                        <li><a class="smooth_scroll" href="covid19-media.php?type=photo">Photos</a></li>
+                                        <li><a class="smooth_scroll" href="covid19-media.php?type=video">Videos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                        id="get_involved">Get involved</a>
+                                    <ul class="dropdown-menu" style="right:0;">
+                                        <li><a href="https://career.carebangladesh.org/" target="_blank">Career with
+                                                CARE</a></li>
+                                        <li><a class="smooth_scroll" href="get_involved.php#sc_1">Consultancy</a></li>
+                                        <li><a class="smooth_scroll" href="get_involved.php#sc_1">Expression of
+                                                Interest</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </hgroup>
+                </div>
+            </div>
+        </div>
+        <div class="region region-header">
+            <div id="block-block-23">
+                <div class="content">
+                    <div class="scroll-logo"><a class="logo" href="index.php"><img src="images/care_logo-scroll.svg"
+                                class="img-responsive"></a></div>
+                    <div class="tag_sticky"><img src="images/care_tag.svg" class="img-responsive"></div>
+                    <div class="expander-link"><a class="expand" href="javascript:void(0)">Click to expand</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container_body" style="padding-top:0;">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/new-slider-2.jpg" alt="">
+                </div>
+                <div class="item ">
+                    <img src="images/new-slider-3.jpg" alt="">
+                </div>
+                <div class="item ">
+                    <img src="images/new-slider-1.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container_body container_body_index-location-map">
+        <div class="container">
+            <div class="row" style="margin:20px auto;">
+                <div class="col-sm-5 col-md-5 noticeboard-container">
+                    <div class="NoticeBoard">
+                        <div class="tape-upperNotice"></div>
+                        <div id="carousel-highlights" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                
+                                <div class="item active">
+                                    <img class="img-responsive" src="images/216833523_4190557174339599_8346454783305255148_n.png" />
+                                    <div class="NoticeInfo">#CARE #Bangladesh deeply mourns the tragic demise of factory workers in Narayanganj, Bangladesh.
+                                    </div>
+                                    <div class="button"><a href="fraude-recuritment-notice-awarness.php">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="images/corona-awarness.jpg" />
+                                    <div class="NoticeInfo"> করোনা ভাইরাস, যা জানা প্রয়োজন </div>
+                                    <div class="button"><a href="corona-awarness.php">Read More</a></div>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="images/corona-awarness-english.jpg" />
+                                    <div class="NoticeInfo"> Corona Virus, Things we need to know </div>
+                                    <div class="button"><a href="corona-awarness.php">Read More</a></div>
+                                </div>
+                                
+                            </div>
+                            <a class="left carousel-control" href="#carousel-highlights" data-slide="prev"><img
+                                    class="img-responsive" src="images/slide_arrow-left.png" alt="First slide"></a>
+                            <a class="right carousel-control" href="#carousel-highlights" data-slide="next"><img
+                                    class="img-responsive" src="images/slide_arrow-right.png" alt="First slide"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-md-7">
+                    <div class="hiGhlightRight">
+                        <div class="colrow">
+                            <h3 class="smHeding"><a href="media-center-view-all.php?type=Event"
+                                    target="_blank">Events</a></h3>
+                            <div class="HiEvents">
+                                <img src="images/event_1581856977_3.jfif" class="img-responsive" height="180"
+                                    alt="Events"><br>
+                                <a href="media-center-view-details.php?type=Event&id=9">ToT on &ldquo;Operational
+                                    Guideline for District &amp; Sub-district Nutrition Co..</a>
+                            </div>
+                        </div>
+                        
+                        <div class="colrow mrlft">
+                            <h3 class="smHeding"><a href="https://www.carebangladesh.org/covid19.php?type=media_updates"
+                                    target="_blank">PUBLICATION</a></h3>
+                            <div class="HiMedia ">
+                                <link rel="stylesheet" href="css/lightbox.min.css">
+                                <style type="text/css">
+                                    .lb-data .lb-details {
+                                        font-size: 25px
+                                    }
+                                </style>
+                                <a href="https://www.carebangladesh.org/upload/files/publication_1684146829_6.pdf"
+                                    data-title="Annaul Report 2022">
+                                    <img class="example-image" src="images/home-care-annual-report-2022.jpg"
+                                        alt="Annaul Report 2022" />
+                                </a>
+                                <br><br>
+                               
+                                <a class="example-image-link"
+                                    href="https://www.carebangladesh.org/upload/files/publication_1684146829_6.pdf"
+                                    data-title="Annual Report 2022">
+                                    Annual Report 2022</a>
+                            </div>
+                        </div>
+                        <div class="colrow ">
+                            <h3 class="smHeding"><a href="nutrition.php" target="_blank">SPOTLIGHT ON NUTRITION</a></h3>
+                            <div class="HiPublication">
+                                <a href="nutrition.php" target="_blank"><img src="images/spot_light_nutrition.jpg"
+                                        class="img-responsive" height="180" alt="Publications"></a><br>
+                            </div>
+                        </div>
+                        <div class="colrow mrlft">
+                            <h3 class="smHeding "><a href="media-center-view-all.php?type=Story" target="_blank">Our
+                                    Stories</a></h3>
+                            <div class="HiStory">
+                                <img src="images/F8kAx3HakAALUTa.jfif" class="img-responsive" height="180"
+                                    alt="Case Story"><br>
+                                <a href="media-center-view-details.php?type=Story&id=129">Bangladesh JANO project:
+                                    &ldquo;As a girl I feel like I have more options now&rdquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container_body social-index-latest">
+        <div class="container">
+            <div class="row social-index">
+                <div class="slide social_activities">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="about_care_box" style="background:#009FE0;">
+                            <iframe
+                                src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/CAREBangladeshOfficialPage&amp;width=320&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=852499508111373"
+                                scrolling="no" frameborder="0"
+                                style="border:none; overflow:hidden; width:100%; height:255px; background:#fff; border:1px solid #e8e8e8; border-radius:5px; -moz-border-radius: 5px; -webkit-border-radius:5px;"
+                                allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="about_care_box" style="background:#954D86;">
+                            <a class="twitter-timeline" href="https://twitter.com/CAREBdesh"
+                                data-widget-id="483220013453545472" data-height="255">Tweets by @CAREBdesh</a>
+                            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="about_care_box" style="background:#DE5059;">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIa0VngJF1M"
+                                frameborder="0" allowfullscreen></iframe>
+                            <p>CARE Bangladesh observes National Mourning Day with nationwide activities across
+                                Bangladesh</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_body container_body_index-what-do what-we-do-latest">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 index-what-do">
+                    <h4 class="homesectitle">How we work</h4>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="index-what-do-box index-what-do-box-home" style="background:#fccf8f;">
+                        <img class="img-responsive" src="images/F8diYDda4AAT7MW.jfif" />
+                        <div class="hidden-details">
+                            <h4>WOMEN'S EMPOWERMENT PROGRAM</h4>
+                            <p>The most socially, economically &amp; politically marginalized are empowered. 'Most' is
+                                defined by multiple denials of right.</p>
+                            <p style="padding-bottom:20px;"><a href="our_impact.php#empowerment">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4 col-md-4">
+                    <div class="index-what-do-box index-what-do-box-home" style="background:#7fc0d5;">
+                        <img class="img-responsive" src="images/F8kAx3HakAALUTa.jfif" />
+                        <div class="hidden-details">
+                            <h4>EXTREMELY RURAL POPULATION PROGRAM</h4>
+                            <p>Extremely poor people in rural areas, especially those trapped in a set of unequal power
+                                relations, will sustainably overcome...</p>
+                            <p style="padding-bottom:20px;"><a href="our_impact.php#rural">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="index-what-do-box index-what-do-box-home" style="background:#c4ca9c;">
+                        <img class="img-responsive" src="images/391674767_742738011231501_959119879023103022_n.jpg" />
+                        <div class="hidden-details">
+                            <h4>MARGINALIZED URBAN POPULATION PROGRAM</h4>
+                            <p>In emerging, regional &amp; district urban centers, the marginalization and poor will
+                                have access to security &amp; wellbeing...</p>
+                            <p style="padding-bottom:20px;"><a href="our_impact.php#urban">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_body" style="padding-top:0px;">
+        <img class="img-responsive" src="images/topedge-care_math.png" />
+    </div>
+    <div class="container_body container_body_index-care-math">
+        <div class="col-sm-12 col-md-12 index-care-math">
+            <h4 class="homesectitle">Our Impact</h4>
+            <img class="img-responsive" src="images/our-work-banner-5.jpg" />
+        </div>
+        
+    </div>
+    
+    <div class="container_body container_body_index-location-map">
+        <div class="container">
+            <div class="row" style="margin:50px auto;">
+                <div class="col-sm-12 col-md-12">
+                    <div class="magnify">
+                        
+                        <div class="large"></div>
+                        <img class="small img-responsive" src="images/82970870_2772159659512698_287390705750376448_n.jpg" width="100%">
+                        <img class="small img-responsive" src="images/329708902_522451113364157_8122481487695272346_n.jpg" width="100%">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- End Area Map & Int pic -->
+    <div class="container_body" style="padding-top:0; padding-bottom:50px;">
+        <div class="container section-title">
+            <h4 style="margin:20px auto; padding-left:15px;">Connect with our other projects</h4>
+            <div class="col-sm-2 col-md-2 our-project-logo">
+                <a target="_blank" href="http://www.livingbluebd.com/">
+                    <img class="img-responsive center-block" src="images/F8diYDXbYAAONMX.jfif" />
+                </a>
+            </div>
+            <div class="col-sm-2 col-md-2 our-project-logo">
+                <a target="_blank" href="http://krishiutsho.com">
+                    <img class="img-responsive center-block" src="images/F8y9TkxbcAA7X8-.jfif" />
+                </a>
+            </div>
+            <div class="col-sm-2 col-md-2 our-project-logo">
+                <a target="_blank" href="https://caretippingpoint.org">
+                    <img class="img-responsive center-block" src="images/what-do-3.jpg" />
+                </a>
+            </div>
+            <div class="col-sm-2 col-md-2 our-project-logo">
+                <a target="_blank" href="https://shouhardo.carebangladesh.org/">
+                    <img class="img-responsive center-block" src="images/what-do-1.jpg" alt="aesabd" />
+                </a>
+            </div>
+            <div class="col-sm-2 col-md-2 our-project-logo">
+            </div>
+        </div>
+    </div>
+    <div class="container_body">
+        <div class="container">
+            <div class="row index-cjf">
+                <div class="col-sm-4 col-md-4">
+                    <h4>Contact us</h4>
+                    <p>
+                        <b>CARE Bangladesh Dhaka Office </b><br>
+                        RAOWA Complex (Level 7-8), VIP Road <br>
+                        Mohakhali, Dhaka -1206, Bangladesh <br>
+                        <b>Phone:</b> +88 02 5505 8377-83 <br>
+                        <b>Fax:</b> +88 02 5505 8374 <br>
+                        <b>Email:</b> +88 589633145<br>
+                        For General Enquiries: <a href="mailto:bgd.info@care.org">bgd.info@care.org</a><br>
+                    </p>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                   <h4>Join us</h4>
+                    <div class="index-join">
+                        <ul class="toolbar">
+                            <li>
+                                <a href="https://www.facebook.com/CareBangladeshOfficialPage" target="_blank">
+                                    <img src="images/icon_facebook.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/CAREBdesh" target="_blank">
+                                    <img src="images/icon_twitter.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/CAREBangladesh1" target="_blank">
+                                    <img src="images/icon_youtube.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <h4>Feedback</h4>
+                    <div id="feedback_mail">
+                        <input id="fb_name" type="text" class="form-control" placeholder="Name">
+                        <input id="fb_email" type="text" class="form-control" placeholder="Email"
+                            style="margin:8px auto;">
+                        <textarea id="fb_details" class="form-control" rows="3" placeholder="Details"
+                            style="resize: none;"></textarea>
+                        <input id="fb_submit" type="submit" name="Submit" class="btn btn-primary"
+                            style="margin:8px auto;">
+                        <span class="err-msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin:0;">
+        <div class="container">
+            <div class="col-md-3">
+                <div class="search_footer">
+                    <form method="get" action="https://www.google.com/search" name="vSearch_basicSearchForm_form_1"
+                        id="vSearch-basicSearchForm-form-1" novalidate="novalidate" target="_blank">
+                        <input type="hidden" value="search.results" name="fuseaction">
+                        <input type="hidden" name="sitesearch" value="carebangladesh.org" />
+                        <fieldset>
+                            <ul class="toolbar">
+                                <li><a href="https://www.facebook.com/CareBangladeshOfficialPage" target="_blank"><img src="images/icon_facebook.svg"></a></li>
+                                 <li><a href="https://www.facebook.com/CareBangladeshOfficialPage" target="_blank"><img src="images/icon_instagram.png"></a></li>
+                                <li><a href="https://twitter.com/CAREBdesh" target="_blank"><img src="images/icon_twitter.svg"></a></li>
+                                <li><a href="https://www.youtube.com/user/CAREBangladesh1" target="_blank"><img src="images/icon_youtube.svg"></a></li>
+                                <li><button type="submit" id="btn-search-footer"><img src="images/icon_search.svg"></button></li>
+                                <li><input type="search" id="search-footer" placeholder="s e a r c h"></li>                             
+    
+                            </ul>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="connect">
+                    <font style="font-family:Arial, Helvetica, sans-serif;">&copy;</font> Copyright 2023 CARE Bangladesh
+                </div>
+            </div>
+            <div class="col-md-5 phtcrdt">
+                <div class="connect"> Photo Credits- Former & Current CARE Staff & Consultants </div>
+            </div>
+            <div class="col-md-2 pwrd">
+                <div class="powered">
+                    Powered by: <a href="https://www.bol-online.com/" target="_blank"><img src="images/bol.png"
+                            alt="BOL"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            "use strict";
+            $('.dropdown-toggle').on('click', function () {
+                var page = $(this).attr('id');
+                window.location.href = page + '.php';
+            });
+            
+            $(".smooth_scroll").on('click', function (event) {
+                var page_link = $(this).attr('href').split('#')[1];
+                $('html, body').animate({
+                    scrollTop: ($("#" + page_link).offset().top - $("#block-block-23").height() - 50) //
+                }, 1000, function () {
+                });
+            });
+            // Search Option Animation
+            $('#btn-search').on('click', function (e) {
+                e.preventDefault();
+                $('#search').animate({ width: 'toggle' }).focus();
+            });
+            $('#btn-search-footer').on('click', function (e) {
+                e.preventDefault();
+                $('#search-footer').animate({ width: 'toggle' }).focus();
+            });
+        });
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/header_scroll.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+        function isEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
+        function err_msg() {
+            var options = {};
+            //options = {to: {background: "red"}};
+            //$(".err-msg").html(options);
+        }
+        $(function () {
+            var maxHeight = Math.max.apply(null, $("div.item-content").map(function () {
+                return $(this).height() + 20;
+            }).get());
+            $("div.item-content").css({ "height": maxHeight });
+            $("#fb_submit").on("click", function () {
+                var fb_name = $("#fb_name").val();
+                var fb_email = $("#fb_email").val();
+                var fb_details = $("#fb_details").val();
+                $(".err-msg").text();
+                if (fb_name != "" && fb_email != "" && fb_details != "") {
+                    if (isEmail(fb_email)) {
+                        $.post("feedback_mail.php", {
+                            fb_name: fb_name,
+                            fb_email: fb_email,
+                            fb_details: fb_details
+                        }, function (ret) {
+                            //if (ret == 'success') {
+                            $(".err-msg").html("");
+                            $("#fb_name").val("");
+                            $("#fb_email").val("");
+                            $("#fb_details").val("");
+                            $("#feedback_mail").html("<h4 style='color: green'>Successfully Submitted</h4>");
+                            // } else {
+                            //     err_msg();
+                            //     $(".err-msg").text("Something wrong, please try again later!" + ret);
+                            // }
+                        });
+                    } else {
+                        err_msg();
+                        $(".err-msg").text("Invalid Email!!");
+                    }
+                } else {
+                    err_msg();
+                    $(".err-msg").text("Please Fill all the fields");
+                }
+            });
+            $(".index-what-do-box-home").hover(
+                function () {
+                    $(this).find(".hidden-details").stop(true, true).animate({ "bottom": "0px", "color": "#ffffff" }, 800)
+                }, function () {
+                    $(this).find(".hidden-details").stop(true, true).animate({ "bottom": "-" + $(this).height() }, 800)
+                }
+            );
+            $("#hexa div.item").hover(
+                function () {
+                    console.log('in');
+                }, function () {
+                    console.log('out');
+                }
+            );
+            $('#LatestNewsCarousel[data-type="multi"] .item').each(function () {
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+                for (var i = 0; i < 2; i++) {
+                    next = next.next();
+                    if (!next.length) {
+                        next = $(this).siblings(':first');
+                    }
+                    next.children(':first-child').clone().appendTo($(this));
+                }
+            });
+            var native_width = 0;
+            var native_height = 0;
+            //Now the mousemove function
+            $(".magnify").mousemove(function (e) {
+                
+                if (!native_width && !native_height) {
+                    
+                    var image_object = new Image();
+                    image_object.src = $(".small").attr("src");
+                    
+                    native_width = image_object.width;
+                    native_height = image_object.height;
+                }
+                else {
+                    
+                    var magnify_offset = $(this).offset();
+                    
+                    var mx = e.pageX - magnify_offset.left;
+                    var my = e.pageY - magnify_offset.top;
+                    //Finally the code to fade out the glass if the mouse is outside the container
+                    if (mx < $(this).width() && my < $(this).height() && mx > 0 && my > 0) {
+                        $(".large").fadeIn(100);
+                    }
+                    else {
+                        $(".large").fadeOut(100);
+                    }
+                    if ($(".large").is(":visible")) {
+                        
+                        var rx = Math.round(mx / $(".small").width() * native_width - $(".large").width() / 2) * -1;
+                        var ry = Math.round(my / $(".small").height() * native_height - $(".large").height() / 2) * -1;
+                        var bgp = rx + "px " + ry + "px";
+                        //Time to move the magnifying glass with the mouse
+                        var px = mx - $(".large").width() / 2;
+                        var py = my - $(".large").height() / 2;
+                        
+                        $(".large").css({ left: px, top: py, backgroundPosition: bgp });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
